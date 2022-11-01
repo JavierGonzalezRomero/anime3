@@ -1,0 +1,27 @@
+<div>
+  <button (click) = "trending()">Trending</button>
+  <button (click) = "Current()">current</button>
+  <button (click) = "UpComing()">upcoming</button>
+  <button (click) = "Average()">average</button>
+  <button (click) = "User()">user</button>
+</div>
+
+<div *ngIf="trendingV">
+<app-gallery [trendingDatosGallery]="trendingDatos"></app-gallery>
+</div>
+
+<div *ngIf="currentV">
+<app-gallery [currentVDatosGallery]="currentVDatos"></app-gallery>
+</div>
+
+<div *ngIf="UpComingV">
+<app-gallery [UpComingVDatosGallery]="UpComingVDatos"></app-gallery>
+</div>
+
+<div *ngIf="AverageV">
+<app-gallery [AverageVDatosGallery]="AverageVDatos"></app-gallery>
+</div>
+
+<div *ngIf="UserV">
+<app-gallery [UserVDatosGallery]="UserVDatos"></app-gallery>
+</div>

@@ -1,0 +1,44 @@
+<div *ngFor="let anime of animeAllGallery">
+  <img src="{{anime.attributes.posterImage.medium}}" alt="">
+  <p>{{anime.attributes.canonicalTitle}}</p>
+  <p>{{anime.attributes.description}}</p>
+  <p>{{anime.attributes.titles.en_jp}}</p>
+</div>
+
+
+
+  <div *ngFor="let anime1 of trendingDatosGallery">
+  <img src="{{anime1.attributes.posterImage.medium}}" alt="">
+  <p>{{anime1.attributes.canonicalTitle}}</p>
+  <p>{{anime1.attributes.description}}</p>
+  <p>{{anime1.attributes.titles.en_jp}}</p>
+  </div>
+
+  <div *ngFor="let anime1 of currentVDatosGallery">
+    <img src="{{anime1.attributes.posterImage.medium}}" alt="">
+    <p>{{anime1.attributes.canonicalTitle}}</p>
+    <p>{{anime1.attributes.description}}</p>
+    <p>{{anime1.attributes.titles.en_jp}}</p>
+    </div>
+
+    <div *ngFor="let anime1 of UpComingVDatosGallery">
+      <img src="{{anime1.attributes.posterImage.medium}}" alt="">
+      <p>{{anime1.attributes.canonicalTitle}}</p>
+      <p>{{anime1.attributes.description}}</p>
+      <p>{{anime1.attributes.titles.en_jp}}</p>
+      </div>
+
+      <div *ngFor="let anime1 of AverageVDatosGallery">
+        <img src="{{anime1.attributes.posterImage.medium}}" alt="">
+        <p>{{anime1.attributes.canonicalTitle}}</p>
+        <p>{{anime1.attributes.description}}</p>
+        <p>{{anime1.attributes.titles.en_jp}}</p>
+        </div>
+
+        <div *ngFor="let anime1 of UserVDatosGallery">
+          <img src="{{anime1.attributes.posterImage.medium}}" alt="">
+          <p>{{anime1.attributes.canonicalTitle}}</p>
+          <p>{{anime1.attributes.description}}</p>
+          <p>{{anime1.attributes.titles.en_jp}}</p>
+          </div>
+
